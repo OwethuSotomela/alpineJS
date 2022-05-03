@@ -39,6 +39,39 @@
             <div x-show="show">Hello Oz</div>
         </div>
 
+        <div x-data="{ title: 'AlpineJS is Awesome' }">
+            <p x-text="title"></p>
+            <input type="text" x-model="title">
+        </div>
+
+        <div x-data="{ code: '<p>Dynamic Paragraph</p>' }">
+            <div x-html="code"></div>
+        </div>
+
+        <div x-data="{ code: '<p>Dynamic Paragraph</p>' }">
+            <div x-ref="sentence">I am a sentence</div>
+            <button @click="$refs.sentence.innerText = 'New sentence added'">Change Sentence</button>
+        </div>
+
+        <div x-data="{ socks: 'blue' }">
+            <template x-if="socks=='blue'">
+                <p>My socks are blue</p>
+            </template>
+            <template x-if="socks=='green'">
+                <p>My socks are green</p>
+            </template>
+            <button @click="socks = 'green'">Change Sox</button>
+        </div>
+
+        <div x-data="{ groceries: ['Milk', 'Eggs', 'Cheese'] }">
+            <p>Groceries</p>
+            <ul>
+                <template x-for="item in groceries">
+                    <li x-text="item"></li>
+                </template>
+            </ul>
+        </div>
+
     </div>
 
     <!-- ends here  -->
