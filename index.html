@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Alpine JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+
+        <!-- start here  -->
+
+        <div x-data="{}"></div>
+
+        <div x-data="{ title: 'Hello Alpine' }">
+            <p x-text="title"></p>
+            <button @click="title='Alpine Rocks!'">click me</button>        </div>
+        </div>
+
+        <div x-data="{ count: 1 }">
+            <p x-text="count"></p>
+            <button @click="count++">Count Up</button>
+        </div>
+
+        <!-- ends here  -->
+
+    </div>
+    <script src="./alpine.js"></script>
+</body>
+
+</html>
