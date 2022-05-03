@@ -3,10 +3,13 @@
 <head>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Alpine JS</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <div class="container">
+
         <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
 
         <!-- start here  -->
@@ -15,18 +18,32 @@
 
         <div x-data="{ title: 'Hello Alpine' }">
             <p x-text="title"></p>
-            <button @click="title='Alpine Rocks!'">click me</button>        </div>
+            <button @click="title='Alpine Rocks!'">click me</button>
         </div>
 
         <div x-data="{ count: 1 }">
             <p x-text="count"></p>
             <button @click="count++">Count Up</button>
+            <button @click="count--">Count Down</button>
         </div>
 
-        <!-- ends here  -->
+        <div x-data="{ countdown: 60 }" x-init="setInterval(function(){
+                countdown--;
+             }, 1000);
+             ">
+            <h1 x-text="countdown"></h1>
+        </div>
+
+        <div x-data="{ show: false }">
+            <button @click="show=!show">Show</button>
+            <div x-show="show">Hello Oz</div>
+        </div>
 
     </div>
-    <script src="./alpine.js"></script>
+
+    <!-- ends here  -->
+
+    </div>
 </body>
 
 </html>
