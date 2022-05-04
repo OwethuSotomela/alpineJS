@@ -17,12 +17,11 @@ body {
 
 h4 {
     background-color: white;
-    padding: 9px 15px;
+    padding: 7px 10px;
     text-align: center;
     align-items: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 5vh;
 }
 
 .row {
@@ -31,7 +30,7 @@ h4 {
 
 .container {
     width: 90%;
-    height: 100vh;
+    height: 100%;
     /* background-color: aqua; */
 }
 
@@ -42,7 +41,7 @@ h4 {
 button {
     background-color: palevioletred;
     color: white;
-    padding: 9px 15px;
+    padding: 7px 10px;
     text-align: center;
     align-items: center;
     text-decoration: none;
