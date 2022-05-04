@@ -47,10 +47,16 @@
             <div class="col-6">
                 <h4>4. AlpineJS x-init</h4>
                 <div x-data="{ countdown: 60 }" x-init="setInterval(function(){
-                    countdown--;
+                    if(countdown !== 0){
+                        countdown--;
+                    }else{
+                        countdown = 0;
+                    }
                  }, 1000);
                  ">
                     <h2 x-text="countdown"></h2>
+                    <button @click="countdown = 60">Reset</button>
+
                 </div>
             </div>
 
