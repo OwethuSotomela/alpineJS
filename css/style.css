@@ -7,6 +7,9 @@ h1 {
 }
 body {
     background-color: cadetblue;
+    background-image: url("../images/bi1.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 h4 {
