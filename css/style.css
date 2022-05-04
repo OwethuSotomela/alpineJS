@@ -1,19 +1,46 @@
 * {
-    margin: 5px;
+    margin: auto;
 }
 
 h1 {
     text-align: center;
+    padding-bottom: 2vh;
+    padding-top: 5vh;
 }
+
 body {
-    background-color: cadetblue;
     background-image: url("../images/bi1.jpeg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 h4 {
     background-color: white;
+    padding: 9px 15px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5vh;
+}
+
+.row {
+    margin-top: auto;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+}
+
+.col-6 {
+    padding-top: 5vh;
+}
+
+button {
+    background-color: palevioletred;
+    color: white;
     padding: 9px 15px;
     text-align: center;
     align-items: center;
